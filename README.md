@@ -2,6 +2,12 @@
 codemirror wrap
 
 ## font face
+default setting do not join the xxx.ttf. you must write the font-face.
+```css
+.CodeMirror {
+  font-family: 'monaco','gohu','consolas',monospace;
+}
+```
 consolas
 ```css
 @font-face {
