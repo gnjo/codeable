@@ -361,7 +361,7 @@ span.CodeMirror-selectedtext { background: none; }
   border: 1px solid silver;
 
   background: #000e;
-  font-family: "Consolas",monospace;
+  font-family: inherit;
 
   max-height: 20em;
   overflow-y: auto;
@@ -390,7 +390,7 @@ li.CodeMirror-hint-active {
 */
 
 
-.cm-s-base16-dark.CodeMirror { background-color: transparent; color: #e0e0e0; font-family:"Consolas",monospace; }
+.cm-s-base16-dark.CodeMirror { background-color: transparent; color: #e0e0e0;}
 .cm-s-base16-dark div.CodeMirror-selected { background-color: #303030; }
 .cm-s-base16-dark .CodeMirror-line::selection, .cm-s-base16-dark .CodeMirror-line > span::selection, .cm-s-base16-dark .CodeMirror-line > span > span::selection { background-color: rgba(48, 48, 48, .99); }
 .cm-s-base16-dark .CodeMirror-line::-moz-selection, .cm-s-base16-dark .CodeMirror-line > span::-moz-selection, .cm-s-base16-dark .CodeMirror-line > span > span::-moz-selection { background-color: rgba(48, 48, 48, .99); }
@@ -425,4 +425,7 @@ li.CodeMirror-hint-active {
 
 .CodeMirror-lines {
   padding: 1rem 2rem; /* Vertical padding around content */
+}
+.CodeMirror {
+  font-family: 'monaco','gohu','consolas',monospace;
 }
