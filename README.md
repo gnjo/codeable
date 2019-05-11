@@ -2,11 +2,18 @@
 codemirror wrap
 
 ## font face
+consolas
+```css
+@font-face {
+  font-family: 'consolas';
+  src: url('https://gnjo.github.io/codeable/consolas.ttf');
+}
+```
 monaco
 ```css
 @font-face {
   font-family: 'monaco';
-  src: url('https://gnjo.github.io/codeable/monaco-webfont.ttf');
+  src: url('https://gnjo.github.io/codeable/monaco.ttf');
 }
 ```
 gohu
