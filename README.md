@@ -9,7 +9,7 @@ monaco
   src: url('https://gnjo.github.io/codeable/monaco-webfont.ttf');
 }
 ```
-gofu
+gohu
 ```css
 @font-face {
   font-family: 'gohu';
