@@ -1,3 +1,8 @@
+/*history
+ v1.0 based editable
+ v1.1 mode css,js,pug
+ v1.2 mode scss,md *md is "gfm" on codemirror
+*/
 ;(function(root){
  let defaultOption={},CodeMirror=root.CodeMirror
  ,is={},util={}
@@ -20,18 +25,21 @@
   ,css=/^\/\*css/
   ,js=/^\/\/js|^\/\/javascript|^\/\*js|^\/\*javascript/
   ,pug=/^\/\/pug/
-  //,scss=/^\/\*scss|^\/\/scss/
-  //if(scss.test(line))return 'text/x-scss'
+  ,md=/<^\!--md-->||^\!--markdown-->/
+  ,scss=/^\/\*scss|^\/\/scss/
+  if(scss.test(line))return 'text/x-scss'
   if(css.test(line))return 'css'
   if(js.test(line))return 'javascript'
   if(pug.test(line))return 'pug'
+  if(md.test(line))return 'gfm'
   return "null";//mode nothing is string null
  }
  ;
  function getCodeMirror(el,obj){
   let user=root.codeableOption||{}
   ,def=util.defaultOption
-  ,opt=Object.assign({},def,user,{value:obj.text,mode:obj.mode})
+  ,mode=util.getMode(obj.text)
+  ,opt=Object.assign({},def,user,{value:obj.text,mode:mode})
   ,caller=obj.caller
   ;
   let cm=CodeMirror(el,opt) //gen
