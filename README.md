@@ -15,7 +15,14 @@ consolas
   src: url('https://gnjo.github.io/codeable/Consolas.ttf');
 }
 ```
-
+newpanama
+```
+@font-face {
+  font-family: 'newpanama';
+  src: url('https://gnjo.github.io/codeable/newpanama.woff?v=1') format("woff"); 
+}
+```
+larabie
 ```css
 @font-face {
   font-family: 'larabie';
