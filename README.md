@@ -22,11 +22,11 @@ newpanama
   src: url('https://gnjo.github.io/codeable/newpanama.woff?v=1') format("woff"); 
 }
 ```
-larabie
+larabie2
 ```css
 @font-face {
-  font-family: 'larabie';
-  src: url('https://gnjo.github.io/codeable/larabie.ttf');
+  font-family: 'larabie2';
+  src: url('https://gnjo.github.io/codeable/larabie2.ttf');
 }
 ```
 gohu
