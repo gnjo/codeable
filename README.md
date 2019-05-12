@@ -13,7 +13,7 @@ e.target.dataset.text
 
 //query target living only, need the document.body children
 codeableOption=opt;
-let ca=codeable('.ed',(e,cm)=>{//e.target.dataset.text//e.target})
+let ca=codeable('.ed',(el,obj)=>{/*//e.target.dataset.text//e.target*/ })
 
 codeable('.ed',true); //meta programming observe the target.dataset.text
 
