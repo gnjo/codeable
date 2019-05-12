@@ -5,7 +5,7 @@ codemirror wrap
 default setting do not join the xxx.ttf. you must write the font-face. choice of the one.
 ```css
 .CodeMirror {
-  font-family: 'monaco','gohu','consolas',monospace;
+  font-family: newpanama,consolas,monospace;
 }
 ```
 consolas
