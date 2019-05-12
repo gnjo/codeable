@@ -5,11 +5,12 @@
  defaultOption={
   mode:""
   ,lineNumbers:false
-  ,tabSize:2
+  ,tabSize:1
+  ,indentUnit:1 
   ,firstLineNumber:1
   ,lineWrapping: true
   ,matchBrackets: true
-  ,theme:'base16-dark'  
+  ,theme:'0fa'  
   ,extraKeys: {"Ctrl-Space": "autocomplete"}
  }
  ;
@@ -82,13 +83,13 @@
   let el=document.querySelector(_query)
   if(!el) return console.log('query empty',_query)
   ;//gather boot value
-  let meta=is.boolean(_caller)?_caller:false
-  ,caller=is.boolean(_caller)?util.dummy:_caller
+  let meta=(_caller===false)?false:true
+  ,caller=is.boolean(_caller)?void 0:_caller
   ,old=util.getData(el)
   ,text=el.textContent||old.text||""
   ,mode=util.getMode(text)
   ;
-  if(meta)console.log('meta flagged')
+  //if(meta)console.log('meta flagged')
   el.textContent='' //swapping
   ;
   let o={}
@@ -98,8 +99,9 @@
   o.caller=caller;
   o.meta=meta
   o.cm=void 0;
+  o.util=util
   o.init=()=>{
-   o.cm=util.getCodeMirror(el,o)
+   o.cm=o.util.getCodeMirror(el,o)
    if(o.meta){
     o.el.dataset.text=o.text
     o.el.dataset.mode=o.mode
@@ -114,7 +116,6 @@
    ;
    return text;
   }
-  o.util=util
 
   o.init();
   return o;
