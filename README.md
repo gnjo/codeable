@@ -47,6 +47,6 @@ panama
 ```css
 @font-face {
   font-family: 'panama';
-  src: url('https://gnjo.github.io/codeable/panama.ttf') format("woff"); 
+  src: url('https://gnjo.github.io/codeable/panama.woff') format("woff"); 
 }
 ```
