@@ -145,7 +145,7 @@
 
 /* Default styles for common addons */
 
-/*div.CodeMirror span.CodeMirror-matchingbracket {color: #0b0;}*/
+div.CodeMirror span.CodeMirror-matchingbracket {color: #0b0;}
 div.CodeMirror span.CodeMirror-nonmatchingbracket {color: #a22;}
 .CodeMirror-matchingtag { background: rgba(255, 150, 0, .3); }
 .CodeMirror-activeline-background {background: #e8f2ff;}
@@ -452,11 +452,14 @@ MIT2019@gnjo
 
 .CodeMirror-matchingtag
 ,.CodeMirror-matchingbracket {
-    /* outline: 1px solid #f26; */
     color: white!important;
-    /* text-decoration: underline; */
     border-bottom: 1px solid #F26;
 }
+.CodeMirror-nonmatchingbracket {
+    color: white!important;
+    background-color: #f26;
+}
+
 
 .cm-s-0fa .cm-searching {
  background: black;
