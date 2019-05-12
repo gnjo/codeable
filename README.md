@@ -12,7 +12,7 @@ consolas
 ```css
 @font-face {
   font-family: 'consolas';
-  src: url('https://gnjo.github.io/codeable/consolas.ttf');
+  src: url('https://gnjo.github.io/codeable/Consolas.ttf');
 }
 ```
 monaco
