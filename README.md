@@ -50,10 +50,3 @@ monaco
   src: url('https://gnjo.github.io/codeable/monaco.ttf');
 }
 ```
-panama
-```css
-@font-face {
-  font-family: 'panama';
-  src: url('https://gnjo.github.io/codeable/panama.woff') format("woff"); 
-}
-```
