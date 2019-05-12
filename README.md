@@ -15,11 +15,11 @@ consolas
   src: url('https://gnjo.github.io/codeable/Consolas.ttf');
 }
 ```
-monaco
+
 ```css
 @font-face {
-  font-family: 'monaco';
-  src: url('https://gnjo.github.io/codeable/monaco.ttf');
+  font-family: 'larabie';
+  src: url('https://gnjo.github.io/codeable/larabie.ttf');
 }
 ```
 gohu
@@ -34,5 +34,12 @@ Inconsolata
 @font-face {
   font-family: 'inconsolata';
   src: url('https://gnjo.github.io/codeable/Inconsolata.ttf');
+}
+```
+monaco
+```css
+@font-face {
+  font-family: 'monaco';
+  src: url('https://gnjo.github.io/codeable/monaco.ttf');
 }
 ```
