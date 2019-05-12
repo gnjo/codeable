@@ -6,14 +6,14 @@ CodeMirror wrapping
 codeableOption=opt;
 codeable(uniqQuery,caller) or codeable(uniqQuery,true) 
 
-e.target.dataset.mode
-e.target.dataset.text
+el.dataset.mode
+el.dataset.text
 //data-mode
 //data-text
 
 //query target living only, need the document.body children
 codeableOption=opt;
-let ca=codeable('.ed',(el,obj)=>{/*//el.target.dataset.text*/ })
+let ca=codeable('.ed',(el,obj)=>{/*//el.dataset.text*/ })
 
 codeable('.ed',true); //meta programming observe the target.dataset.text
 
