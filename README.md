@@ -29,3 +29,10 @@ gohu
   src: url('https://gnjo.github.io/codeable/gohufont-uni-14ttf');
 }
 ```
+Inconsolata
+```css
+@font-face {
+  font-family: 'inconsolata';
+  src: url('https://gnjo.github.io/codeable/Inconsolata.ttf');
+}
+```
