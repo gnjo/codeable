@@ -1,5 +1,11 @@
 # codeable
 CodeMirror wrapping
+```pug
+//pug
+script(src="https://gnjo.github.io/codeable/codemirror.pack.js")
+script(src="https://gnjo.github.io/codeable/codeable.js")
+link(href="https://gnjo.github.io/codeable/codemirror.pack.css" rel="stylesheet")
+```
 
 ```js
 //completed detail
